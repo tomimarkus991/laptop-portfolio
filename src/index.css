@@ -12,11 +12,22 @@ html, body {
   user-select: none;
 }
 
+canvas {
+  touch-action: none;
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.htmlScreen iframe {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 20px;
+  background: #000;
 }
 
 /* Firefox */

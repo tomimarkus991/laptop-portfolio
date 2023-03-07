@@ -2,8 +2,6 @@
 /* eslint-disable import/order */
 import "@/index.css";
 
-import { TanstackQueryWrapper } from "./TanstackQueryWrapper";
-
 import { Rubik } from "next/font/google";
 import { Metadata } from "next";
 
@@ -27,9 +25,7 @@ export default function RootLayout({ children }: Props) {
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={rubik.className}>
-        <TanstackQueryWrapper>{children}</TanstackQueryWrapper>
-      </body>
+      <body className={rubik.className}>{children}</body>
     </html>
   );
 }
